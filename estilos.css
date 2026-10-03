@@ -10,7 +10,13 @@ body {
    font-family: Arial, sans-serif;
    margin: 0;
    padding: 0;
-   background-color: #f4f4f9;
+   background-image: linear-gradient(rgba(71, 157, 255, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ), 
+    url('mi tenic.jpg');
+   
+   background-size: cover;
+   background-attachment: fixed;
 }
 /*para el que vea esto no sabe lo que tuve que investigar*/ 
 
@@ -36,3 +42,10 @@ flex-direction: column;
       grid-template-columns: repeat(3, 1fr);
       gap: 24px; 
     } /*esto hace que se puedan colocar en columnas y todo eso*/
+
+a { 
+color: white;
+text-decoration: none;
+margin-right: 10px;
+}
+
