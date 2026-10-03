@@ -28,6 +28,11 @@ padding: 24px;
 max-width: 500px;
 box-shadow: 0 10px 25px rgba(0,0,0,0.1);    
 text-align: center;
-}
+flex-direction: column;
+} /*esto hace el diseño de la tarjeta*/
 
-
+.grid-tarjetas {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px; 
+    } /*esto hace que se puedan colocar en columnas y todo eso*/
