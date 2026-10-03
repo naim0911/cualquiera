@@ -6,55 +6,26 @@ header {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f4f4f9;
+}
 
 .tl {
-  list-style: none;
-  padding: 0;
-  margin: 2rem auto;
-  max-width: 600px;
-  position: relative;
 }  /*para el que vea esto no sabe lo que tuve que investigar*/ 
 /*Yo soy slenderman, y estos mis bosques 🗣️🗣️🗣️*/
 /*sigue sin funcar ._.*/
 .centrado {
     text-align: center; 
 }
-.tl::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 20px;
-  width: 4px;
-  background: #e0e0e0;
-  border-radius: 2px;
+   
+.tarjeta {    
+background: white;
+border-radius: 12px;
+padding: 24px;
+max-width: 500px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.1);    
+text-align: center;
 }
-.tl li {
-  position: relative;
-  margin-bottom: 2rem;
-  padding-left: 50px; 
-}
-.tl li::before {
-  content: '';
-  position: absolute;
-  left: 13px; 
-  top: 4px;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: #3b82f6; 
-  border: 3px solid #ffffff;
-  box-shadow: 0 0 0 2px #3b82f6;
-  z-index: 1;
-}
-
-
-.tl time {
-  display: inline-block;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #3b82f6;
-  text-transform: uppercase;
-  margin-bottom: 0.25rem;
-}
-
