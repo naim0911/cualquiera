@@ -10,9 +10,10 @@ header {
 
 .timeline {
   position: relative;
-  max-width: 600px;
-  margin: 0 auto;
-  padding-left: 30px; 
+  max-width: 700px;
+  margin: 30px auto;
+  padding-left: 40px; 
+  box-sizing: border-box;
 }
 
 
@@ -21,7 +22,7 @@ header {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 8px;
+  left: 15px;
   width: 4px; 
   background-color: #007bff; 
   border-radius: 2px;
@@ -30,14 +31,15 @@ header {
 
 .timeline-item {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+  width: 100%;
 }
 
 
 .timeline-dot {
   position: absolute;
-  left: -28px; 
-  top: 4px;
+  left: -31px; 
+  top: 5px;
   width: 14px;
   height: 14px;
   background-color: #ffffff;
