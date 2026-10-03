@@ -7,4 +7,18 @@ header {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.tl {
+  --tl-color: #2E5AAC;       
+  --tl-bg: #ffffff;          
+  --tl-text: #1f2937;        
+  --tl-muted: #6b7280;      
+  --tl-border: 3px;         
+  --tl-dot: 15px;            
+  --tl-gap: clamp(1rem, 2vw, 1.5rem);
 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}  /*para el que vea esto no sabe lo que tuve que investigar*/ 
+/*Yo soy slenderman, y estos mis bosques 🗣️🗣️🗣️*/
