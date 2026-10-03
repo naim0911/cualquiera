@@ -12,16 +12,17 @@ header {
   --tl-bg: #ffffff;          
   --tl-text: #1f2937;        
   --tl-muted: #6b7280;      
-  --tl-border: 3px;         
-  --tl-dot: 15px;            
+  --tl-border: 10px;         
+  --tl-dot: 20px;            
   --tl-gap: clamp(1rem, 2vw, 1.5rem);
 
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 1;
+  padding: 1;
   font-family: system-ui, -apple-system, sans-serif;
 }  /*para el que vea esto no sabe lo que tuve que investigar*/ 
 /*Yo soy slenderman, y estos mis bosques 🗣️🗣️🗣️*/
+/*sigue sin funcar ._.*/
   .centrado {
-    text-align: center; /* Centra horizontalmente el texto */
+    text-align: center; 
   }
