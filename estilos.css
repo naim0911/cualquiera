@@ -22,3 +22,6 @@ header {
   font-family: system-ui, -apple-system, sans-serif;
 }  /*para el que vea esto no sabe lo que tuve que investigar*/ 
 /*Yo soy slenderman, y estos mis bosques 🗣️🗣️🗣️*/
+  .centrado {
+    text-align: center; /* Centra horizontalmente el texto */
+  }
