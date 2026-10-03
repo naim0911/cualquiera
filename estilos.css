@@ -29,3 +29,11 @@ max-width: 500px;
 box-shadow: 0 10px 25px rgba(0,0,0,0.1);    
 text-align: center;
 }
+
+.seccion {
+min-height: 80vh;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+}
