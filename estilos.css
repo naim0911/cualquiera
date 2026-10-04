@@ -28,13 +28,14 @@ body {
 }
    
 .tarjeta {    
-background: white;
+background: rgb(182, 182, 182);
 border-radius: 12px;
 padding: 24px;
 max-width: 500px;
 box-shadow: 0 10px 25px rgba(0,0,0,0.1);    
 text-align: center;
 flex-direction: column;
+display: flex;
 } /*esto hace el diseño de la tarjeta*/
 
 .grid-tarjetas {
@@ -49,3 +50,6 @@ text-decoration: none;
 margin-right: 10px;
 }
 
+a:hover {
+  color: rgb(71, 157, 255);  
+}
