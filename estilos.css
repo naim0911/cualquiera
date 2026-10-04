@@ -44,7 +44,7 @@ flex-direction: column;
     } /*esto hace que se puedan colocar en columnas y todo eso*/
 
 a { 
-color: white;
+color: rgb(0, 0, 0);
 text-decoration: none;
 margin-right: 10px;
 }
