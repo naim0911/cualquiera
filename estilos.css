@@ -28,7 +28,7 @@ body {
 }
    
 .tarjeta {    
-background: rgb(182, 182, 182);
+background: white;
 border-radius: 12px;
 padding: 24px;
 max-width: 500px;
@@ -53,3 +53,5 @@ margin-right: 10px;
 a:hover {
   color: rgb(71, 157, 255);  
 }
+
+/*estoy empezando a perder la cordura*/
