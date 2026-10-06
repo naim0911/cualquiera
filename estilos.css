@@ -42,7 +42,7 @@ display: flex;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 24px; 
-    } /*esto hace que se puedan colocar en columnas y todo eso*/
+} /*esto hace que se puedan colocar en columnas y todo eso*/
 
 a { 
 color: rgb(0, 0, 0);
@@ -54,4 +54,7 @@ a:hover {
   color: rgb(71, 157, 255);  
 }
 
+.tarjeta:hover {
+  color: rgb(71, 157, 255);  
+}
 /*estoy empezando a perder la cordura*/
