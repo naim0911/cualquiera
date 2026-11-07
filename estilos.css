@@ -1,60 +1,167 @@
-header {
-  display: flex;
-  flex-direction: column;
-  padding: 1.5rem;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+:root {
+  --primary: #0d47a1;      /* Azul técnico institucional */
+  --secondary: #1565c0;    /* Azul secundario */
+  --accent: #ffb300;       /* Amarillo/Dorado para contrastes */
+  --bg-color: #f4f6f9;     /* Fondo claro */
+  --card-bg: #ffffff;      /* Fondo de las tarjetas */
+  --text-dark: #222222;    /* Texto principal */
+  --text-muted: #555555;   /* Texto secundario */
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.15);
+  --radius: 12px;
 }
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-   font-family: Arial, sans-serif;
-   margin: 0;
-   padding: 0;
-   background-image: linear-gradient(rgba(71, 157, 255, 0.5), 
-      rgba(0, 0, 0, 0.5)
-    ), 
-    url('img/mi tenic.jpg');
-   
-   background-size: cover;
-   background-attachment: fixed;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+  line-height: 1.6;
 }
-/*para el que vea esto no sabe lo que tuve que investigar*/ 
 
-
-/*Yo soy slenderman, y estos mis bosques 🗣️🗣️🗣️*/
-
+/* Clase para centrar contenido */
 .centrado {
-    text-align: center; 
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  text-align: center;
 }
-   
-.tarjeta {    
-background: white;
-border-radius: 12px;
-padding: 24px;
-max-width: 500px;
-box-shadow: 0 10px 25px rgba(0,0,0,0.1);    
-text-align: center;
-flex-direction: column;
-display: flex;
-} /*esto hace el diseño de la tarjeta*/
+
+header {
+  background: linear-gradient(135deg, #0a3578, var(--primary));
+  color: white;
+  padding: 2.5rem 1rem 1.5rem 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+nav.centrado {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding-top: 0.5rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: var(--accent);
+  color: #000000;
+  transform: translateY(-2px);
+}
+
+
+section.centrado {
+  margin-bottom: 2.5rem;
+}
+
+section.centrado h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+section.centrado p {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+article.centrado {
+  padding-bottom: 4rem;
+}
 
 .grid-tarjetas {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px; 
-} /*esto hace que se puedan colocar en columnas y todo eso*/
-
-a { 
-color: rgb(0, 0, 0);
-text-decoration: none;
-margin-right: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
-a:hover {
-  color: rgb(71, 157, 255);  
+/* Formato de enlaces envolventes */
+.grid-tarjetas a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
 }
 
-.tarjeta:hover {
-  color: rgb(71, 157, 255);  
+.seccion {
+  width: 100%;
 }
-/*estoy empezando a perder la cordura*/
+
+.tarjeta {
+  background: var(--card-bg);
+  padding: 2rem 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border-top: 5px solid var(--primary);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.tarjeta h2 {
+  font-size: 1.3rem;
+  color: var(--primary);
+  margin-bottom: 0.8rem;
+  text-align: left;
+}
+
+.tarjeta p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  text-align: left;
+  line-height: 1.5;
+}
+
+/* Efectos al pasar el mouse por una tarjeta */
+.grid-tarjetas a:hover .tarjeta {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+  border-top-color: var(--accent);
+}
+
+
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  nav.centrado {
+    gap: 0.5rem;
+  }
+  
+  nav a {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
